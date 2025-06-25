@@ -1,0 +1,15 @@
+{
+  "name": "termsbuilder",
+  "version": "1.0.0",
+  "description": "A professional, customizable tool that helps individuals and businesses create legally-sound Terms and Conditions for their websites and applications.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.21.2"
+  }
+}
