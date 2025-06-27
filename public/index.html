@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
             --border-color: #334155;
             --input-bg: #1e293b;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
@@ -31,18 +32,20 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
         }
-        
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: var(--accent-color);
             font-weight: 600;
             text-align: center;
         }
-        
+
         .form-section {
             background-color: var(--card-bg-color);
             padding: 30px;
@@ -51,13 +54,13 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             border: 1px solid var(--border-color);
         }
-        
+
         .form-label {
             color: var(--text-color);
             font-weight: 500;
             margin-bottom: 8px;
         }
-        
+
         .form-control {
             background-color: var(--input-bg);
             border: 1px solid var(--border-color);
@@ -66,33 +69,33 @@
             padding: 12px 16px;
             transition: all 0.3s ease;
         }
-        
+
         .form-control:focus {
             background-color: var(--input-bg);
             border-color: var(--accent-color);
             box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
             color: var(--text-color);
         }
-        
+
         .form-control::placeholder {
             color: var(--text-muted);
         }
-        
+
         .form-check-label {
             color: var(--text-color);
             font-weight: 400;
         }
-        
+
         .form-check-input {
             background-color: var(--input-bg);
             border-color: var(--border-color);
         }
-        
+
         .form-check-input:checked {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
         }
-        
+
         .btn-primary {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
@@ -103,30 +106,30 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(34, 197, 94, 0.25);
         }
-        
+
         .btn-primary:hover {
             background-color: var(--accent-hover);
             border-color: var(--accent-hover);
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(34, 197, 94, 0.3);
         }
-        
+
         .btn-secondary {
             background-color: var(--card-bg-color);
             border-color: var(--border-color);
             color: var(--text-color);
         }
-        
+
         .btn-secondary:hover {
             background-color: #2d3748;
             border-color: var(--border-color);
         }
-        
+
         .output-section {
             position: relative;
             margin-top: 30px;
         }
-        
+
         #termsOutput {
             width: 100%;
             min-height: 350px;
@@ -139,7 +142,7 @@
             line-height: 1.6;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         .copy-btn {
             position: absolute;
             top: 10px;
@@ -154,36 +157,37 @@
             color: white;
             transition: all 0.2s ease;
         }
-        
+
         .copy-btn:hover {
             background-color: var(--accent-hover);
             border-color: var(--accent-hover);
         }
-        
+
         .alert-warning {
             background-color: rgba(251, 191, 36, 0.1);
             border: 1px solid rgba(251, 191, 36, 0.2);
             color: #fcd34d;
         }
-        
+
         .text-muted {
             color: var(--text-muted) !important;
         }
-        
+
         .section-title {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        
-        .section-title:before, .section-title:after {
+
+        .section-title:before,
+        .section-title:after {
             content: "";
             flex: 1;
             height: 1px;
             background-color: var(--border-color);
             margin: 0 15px;
         }
-        
+
         footer {
             margin-top: auto;
             text-align: center;
@@ -194,36 +198,41 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1 class="my-4">Terms And Conditions Generator</h1>
-        <p class="text-center mb-4 text-muted">Create professional, legally-sound Terms and Conditions for your website or application</p>
-        
+        <p class="text-center mb-4 text-muted">Create professional, legally-sound Terms and Conditions for your website
+            or application</p>
+
         <div class="form-section">
             <h3 class="section-title mb-4">Enter Your Details</h3>
             <form id="termsForm">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="companyName" class="form-label">Company/Website Name</label>
-                        <input type="text" class="form-control" id="companyName" placeholder="Your Company Name" required>
+                        <input type="text" class="form-control" id="companyName" placeholder="Your Company Name"
+                            required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="websiteUrl" class="form-label">Website URL</label>
-                        <input type="url" class="form-control" id="websiteUrl" placeholder="https://www.yourwebsite.com" required>
+                        <input type="url" class="form-control" id="websiteUrl" placeholder="https://www.yourwebsite.com"
+                            required>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="contactEmail" class="form-label">Contact Email</label>
-                        <input type="email" class="form-control" id="contactEmail" placeholder="contact@yourwebsite.com">
+                        <input type="email" class="form-control" id="contactEmail"
+                            placeholder="contact@yourwebsite.com">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="country" class="form-label">Country of Operation</label>
                         <input type="text" class="form-control" id="country" placeholder="e.g., United States">
                     </div>
                 </div>
-                
+
                 <div class="row mt-3">
                     <div class="col-md-12 mb-3">
                         <h5 class="text-muted mb-3">Select applicable sections</h5>
@@ -235,7 +244,8 @@
                                 </div>
                                 <div class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" id="intellectualProperty" checked>
-                                    <label class="form-check-label" for="intellectualProperty">Intellectual Property</label>
+                                    <label class="form-check-label" for="intellectualProperty">Intellectual
+                                        Property</label>
                                 </div>
                                 <div class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" id="userContent" checked>
@@ -263,33 +273,40 @@
                         </div>
                     </div>
                 </div>
-                
-                <button type="button" id="generateBtn" class="btn btn-primary d-block mx-auto my-4 px-5 py-2">Generate Terms & Conditions</button>
+
+                <button type="button" id="generateBtn" class="btn btn-primary d-block mx-auto my-4 px-5 py-2">Generate
+                    Terms & Conditions</button>
             </form>
         </div>
-        
+
         <div class="output-section" id="outputSection" style="display: none;">
             <h3 class="section-title mb-4">Your Generated Terms and Conditions</h3>
-            <p class="text-muted text-center mb-4">Review and customize the content below before using it on your website</p>
-            
+            <p class="text-muted text-center mb-4">Review and customize the content below before using it on your
+                website</p>
+
             <div class="position-relative">
                 <button id="copyBtn" class="btn copy-btn">Copy to Clipboard</button>
                 <textarea id="termsOutput" class="form-control" readonly></textarea>
             </div>
-            
+
             <div class="alert alert-warning mt-3">
-                <strong>Disclaimer:</strong> This generated document serves as a template and may need to be reviewed by a legal professional before implementation to ensure it meets your specific requirements and complies with local laws.
+                <strong>Disclaimer:</strong> This generated document serves as a template and may need to be reviewed by
+                a legal professional before implementation to ensure it meets your specific requirements and complies
+                with local laws.
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>© 2023 Terms and Conditions Generator | Professional legal document generator tool</p>
+            <p>Powered By <a href="https://flexifunnels.com" target="_blank" rel="noopener noreferrer"
+                    className="hover:underline" style="color: white;">FlexiFunnels.</a> All rights reserved.</p>>
+            <p>Build Websites, Funnels & Courses Without Coding... Using AI</p>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
